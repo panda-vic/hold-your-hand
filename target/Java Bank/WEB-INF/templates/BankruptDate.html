@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <thymeleaf th:replace="header :: header" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        header{
+    text-align: center;
+    background-color: beige;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    top: 0;
+}
+#packageTitle{
+    color: seashell;
+    background-color: seagreen;
+    background-repeat: repeat; 
+    padding: 2%;
+}
+.card{
+    width: 2500em;
+    background-size: 100%;
+    background-color: beige;
+    margin-left: auto;
+    margin-top: 10%;
+    padding: auto;
+}
+.cards{
+    width: 80%;
+    padding-left: 20%;
+    display: flex;
+    float: center;
+    clear: none; 
+}
+.card-img-top{
+    
+    height: 300px;
+    object-fit: cover;
+}
+.sign{
+    text-align: center;
+    padding: 3%;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div id="title">
+            <div class = "main title">
+                <h1>I Want To Hold Your Hand</h1>
+            </div>
+            <div class = "subtitle">
+                <h2>Your Favourite Date Planner</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <div id ="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/home}">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/packages/all}"><Strong>Packages</Strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/packages/create}">Create Package</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/home/about}">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Partners</a>
+                        </li>
+
+                    </ul>
+                    <div class="sign"style="position: absolute; right: 0">
+                        <span class="navbar-text">
+                            <button class="btn btn-outline-danger" type="submit" style="float: right">Sign In </button>
+                            <button class="btn btn-outline-danger" type="submit" style="float: right">Sign up</button>
+                          </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class=body>
+        <div id = "packageTitle">
+            <div id = "packageBigTitle">
+                <h2><b>Go Bankrupt Date Package</b> </h2>
+            </div>
+            <div id = "packageTitleDescription">
+                <h3>Treat yourself and your partner as you deserve</h3>
+            </div>
+        </div>
+        <div id = "description">
+            <br></br>
+            <h5>If you think your partner is worth all the money in the world and you can afford it, we have special pack that will blow.your.mind. If you don't trust our word, just wait and see, we dare you. By the way, have you ever been on a limousine? </h5>
+            <br></br>
+            <h5><b>This package includes:</b></h5>
+        </div>
+     
+
+
+
+        <div class="cards">
+            <div class="card" style="width: 50rem;">
+                <img src="Resources/yacht.jpeg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">A luxury yacht tour @ Tagus Rives</h5>
+                <p class="card-text">Get to know Lisbon in the calm waters of biggest river in the Iberian Peninsula.</p>
+
+                <button type="button" class="btn btn-outline-success">View Details</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 50rem;">
+                <img src="Resources/fifty.jpg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">Dinner @ Fifty Seconds </h5>
+                <p class="card-text">Experience one of the finnest restaurants in Portugal and taste the delicous food of Martin Berasategui.</p>
+                <button type="button" class="btn btn-outline-success">View Details</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 50rem;">
+                <img src="Resources/Silk.jpg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">After Dinner @ Silk-Club</h5>
+                <p class="card-text">A beautiful Japanese restaurant that turns into a nightclub after midnight with one of the best views in Lisbon.</p>
+                <button type="button" class="btn btn-outline-success">View Details</button>
+                </div>
+            </div>
+            <div class="card" style="width: 50rem;">
+                <img src="Resources/Ritz.jpg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">Night @ Ritz Hotel</h5>
+                <p class="card-text">Spend the night in Lisbon's most luxurious hotel with your partner and exclusive room service with special offers. </p>
+                <button type="button" class="btn btn-outline-success">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sign">
+            <span class="navbar-text">
+                <button type="button" class="btn btn-success">Sign Me In!</button>
+              </span>
+        </div>
+
+
+
+
+    </div>

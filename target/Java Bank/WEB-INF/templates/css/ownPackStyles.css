@@ -1,0 +1,20 @@
+header{
+    text-align: center;
+    background-color: beige;
+
+
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    top: 0;
+    
+}
+
+#packageTitle{
+
+    background-color: darksalmon ;
+    background-repeat: repeat; 
+ 
+    padding: 2%;
+    
+}

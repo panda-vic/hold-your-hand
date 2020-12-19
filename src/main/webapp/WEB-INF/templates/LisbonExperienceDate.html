@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <thymeleaf th:replace="header :: header" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+
+        body{
+        background-image: url(https://i.ibb.co/pj3ZKDP/d6ji3qh-1beb5458-4675-49b3-aa00-a8c31a09632c.jpg);
+        border-radius: 50%;
+        font-family: 'Quando', serif;
+
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat:wght@1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+
+    header{
+        text-align: center;
+
+        width: 100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        top: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+#packageTitle{
+
+    padding: 2%;
+}
+.card{
+    width: 2500em;
+    background-size: 100%;
+    background-color: beige;
+    margin-left: auto;
+    margin-top: 10%;
+    padding: auto;
+}
+.cards{
+    width: 80%;
+    padding-left: 20%;
+    display: flex;
+    float: center;
+    clear: none;
+    font-family: 'Quando', serif;
+}
+.card-img-top{
+    
+    height: 300px;
+    object-fit: cover;
+}
+.sign{
+    text-align: center;
+    padding: 3%;
+}
+    .button{
+        text-align: center;
+        font-family: 'Quando', serif;}
+
+
+    .page-footer{
+        font-family: 'Quando', serif;
+        font-size: 12px;
+    }
+
+
+    .title{
+        text-align: center;
+    }
+
+    #description{
+    padding: 2%;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://i.ibb.co/d0DP7sw/4dbb718ad6d486a1aa9677bf9e4959b6.png" width="10%">
+
+        <div id="title">
+            <div class = "main title">
+                <h1>Hold Your Hand</h1>
+            </div>
+            <div class = "subtitle">
+                <h2>Your Favourite Date Planner</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <div id ="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/home/main}">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/packages/all}"><Strong>Packages</Strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/packages/create}">Create Package</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/home/about}">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/home/allPartners}">Our Partners</a>
+                        </li>
+
+                    </ul>
+                    <div class="sign"style="position: absolute; right: 0">
+                        <span class="navbar-text">
+                            <a class="btn btn-outline-secondary btn-sm" th:href="@{/sign/out}" style="float: right">Sign-out</a>
+                             <a class="btn btn-outline-secondary btn-sm" th:href="@{/user/show}" style="float: right">Your Info</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class=body>
+        <div id = "packageTitle">
+            <div id = "packageBigTitle">
+                <h2><b>Lisbon Experience Date Package</b> </h2>
+            </div>
+            <div id = "packageTitleDescription">
+                <h3>Find more about this wonderful Lisbon, a historical city full of stories to tell beyond every corner, where the sun shines 290 days a year.</h3>
+            </div>
+        </div>
+        <div id = "description">
+            <br></br>
+            <h5>There's no better way of getting to know the genuine side of Lisbon than going through the streets of Alfama and spend the day contemplating portuguese culture with your partner. This package will guide you through the daily lives of the citizens of this city and will provide you an experience that can be put only in one word: genuine.</h5>
+            <br></br>
+            <h5><b>This package includes:</b></h5>
+        </div>
+     
+
+
+
+        <div class="cards">
+            <div class="card" style="width: 50rem;">
+                <img src="https://i.ibb.co/KKXrwJS/Tile.jpg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">Visit @ Tiles Museum</h5>
+                <p class="card-text">See a collection of some of the most beautiful <i>azulejos</i> in Portugal, and learn more about the country's traditional tilework. </p>
+                    <a class="btn btn-outline-danger" href="http://www.museudoazulejo.gov.pt/">View Details</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 50rem;">
+                <img src="https://i.ibb.co/JWLsLrG/Gra-a.jpg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">After Dinner @ Graça Viewpoint</h5>
+                <p class="card-text">Watch Lisbon in one of best spots to apreciate its beauty and magic in the city's reference historical place. </p>
+                    <a class="btn btn-outline-danger" href="https://www.tripadvisor.pt/Attraction_Review-g189158-d4009718-Reviews-Miradouro_da_Graca_Sophia_de_Mello_Breyner_Andresen-Lisbon_Lisbon_District_Centra.html">View Details</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 50rem;">
+                <img src="https://i.ibb.co/5W1Ndjf/fado.jpg" class="card-img-top" alt="diyPackages">
+                <div class="card-body">
+                <h5 class="card-title">Dinner & Concert @ Sr Vinho </h5>
+                <p class="card-text">Live the real portuguese traditional experience by enjoying a nice meal and a Fado concert at one of the best <i>casas de fado</i> around.</p>
+                    <a class="btn btn-outline-danger" href="https://www.tripadvisor.com/Restaurant_Review-g189158-d2095350-Reviews-Sr_Vinho-Lisbon_Lisbon_District_Central_Portugal.html">View Details</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="sign">
+            <span class="navbar-text">
+                 <a class="btn btn-success" th:href="@{/packages/build/done}">Sign Me In!</a>
+              </span>
+        </div>
+        <footer class="page-footer font-small blue">
+
+            <div class="footer-copyright text-center py-3"><small>© 2020 Copyright:</small>
+                <p> <small>alphaDogs</small></p>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+</body>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <thymeleaf th:replace="header :: header" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Welcome</title>
+</head>
+<style>
+
+    body{
+        background-image: url(https://i.ibb.co/pj3ZKDP/d6ji3qh-1beb5458-4675-49b3-aa00-a8c31a09632c.jpg);
+        border-radius: 50%;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat:wght@1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+
+    header{
+    text-align: center;
+
+
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.card{
+    width: 2500em;
+    background-size: 100%;
+    align-content: center;
+    background-color: beige;
+    margin-left: auto;
+    margin-top: 3%;
+    padding: auto;
+}
+
+.cards{
+    width: 80%;
+    padding-left: 20%;
+    display: flex;
+    float: center;
+    clear: none;
+
+
+    font-family: 'Quando', serif;}
+
+.option{
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+    font-family: 'Quando', serif;}
+
+
+.page-footer{
+    font-family: 'Quando', serif;
+    font-size: 12px;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+</style>
+<body>
+<header>
+    <img class="logo" src="https://i.ibb.co/d0DP7sw/4dbb718ad6d486a1aa9677bf9e4959b6.png" width="10%">
+    <div id="title">
+        <div class = "main title">
+            <h1>Hold Your Hand</h1>
+        </div>
+        <div class = "subtitle">
+            <h2>Your Favourite Date Planner</h2>
+        </div>
+    </div>
+</header>
+
+
+<div class="body">
+    <div class="cards">
+        <div class="card" style="width: 100rem;">
+            <img src="https://i.ibb.co/m0jKT78/love-couple-holding-hands-together.jpg" class="card-img-top" alt="diyPackages">
+            <div class="card-body">
+
+                <p class="card-text">In a time that romance is needed, and you don't know what to do.
+                </p>
+                <p class="card-text">Worry no more. Welcome to the best planner for your date!</p>
+                <p class="card-text"><strong>REGISTER NOW AND FIND OUT HOW WE CAN CHANGE YOUR LIFE</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="button">
+        <a class="btn btn-outline-light btn-lg" th:href="@{/sign/up}">Sign-Up</a>
+        <a class="btn btn-outline-light btn-lg" th:href="@{/sign/in}">Sign-In</a>
+    </div>
+
+    <div class="button">
+        <a class="btn btn-outline-light btn-lg" th:href="@{/home/about}">About Us</a>
+    </div>
+
+    <footer class="page-footer font-small blue">
+
+        <div class="footer-copyright text-center py-3"><small>© 2020 Copyright:</small>
+            <p> <small>alphaDogs</small></p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

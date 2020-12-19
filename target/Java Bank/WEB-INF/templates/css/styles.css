@@ -1,0 +1,55 @@
+header{
+    color:purple;
+    position: fixed;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    top: 0;
+    background-color: black;
+    border: 1px black;
+    border-style: solid;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    text-align: center;
+    
+}
+
+#emailSubmission{
+    text-align: left 
+}
+
+
+
+.body{
+    width: 100%;
+    padding-top: 9.1%;
+    /*background-image: url(/home/francisco/Pictures/pulse.jpg) ;*/
+    background-color: white;
+    color: blueviolet;
+    
+}
+
+#Madness{
+    padding-top: 3%;
+    
+    
+    background-color: beige;
+}
+
+.image{
+    size: 100%;
+    text-align: center;
+    border:1px black;
+    padding-top: 5%;
+}
+
+#confused{
+    text-align: end;
+}
+
